@@ -1,0 +1,25 @@
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom,
+            rgba($colour-primary-light, 0.8),
+            rgba($colour-primary-dark, 0.8)),
+        url(../img/nat-4.jpg);
+    background-size    : cover;
+    background-position: top;
+    position           : relative;
+    clip-path          : polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    -webkit-clip-path  : polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+}
+
+
+.text-box {
+    position: absolute;
+    left    : 50%;
+    /* relative to the parent element */
+    top: 40%;
+    /* relative to the parent element */
+    transform: translate(-50%, -50%);
+    /* relative to the element itself */
+    text-align: center;
+}

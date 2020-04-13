@@ -1,0 +1,63 @@
+.section-about {
+    background-color: $colour-grey-light-1;
+    padding         : 10rem 3rem;
+    margin-top      : -20vh;
+    margin-bottom   : -5rem;
+}
+
+.section-features {
+    padding: 10rem 0;
+    background-image: linear-gradient(to right bottom,
+            rgba($colour-primary-light, 0.8),
+            rgba($colour-primary-dark, 0.8)),
+        url(../img/nat-4.jpg);
+    background-size: cover;
+    margin-top     : -5rem;
+
+    transform: skewY(-7deg);
+
+    &>* {
+        // > stands for direct child
+        transform: skewY(7deg);
+    }
+}
+
+.section-career {
+    background-color: $colour-grey-light-1;
+    padding         : 10rem 3rem 20rem 3rem;
+    margin-top      : -5rem;
+}
+
+.section-awards {
+    background-color: $colour-grey-light-1;
+    padding         : 5rem 0;
+    margin-top      : -10rem;
+    background-image: linear-gradient(to right bottom,
+            rgba($colour-primary-light, 0.8),
+            rgba($colour-primary-dark, 0.8)),
+        url(../img/nat-4.jpg);
+    background-size: cover;
+    transform      : skewY(-7deg);
+
+    &>* {
+        // > stands for direct child
+        transform: skewY(7deg);
+    }
+}
+
+.section-interests {
+    padding         : 10rem 3rem 20rem 3rem;
+    margin-top      : -5rem;
+    position: relative;
+}
+
+.footer {
+    background-color: $colour-grey-dark-2;
+    padding: 3rem 0;
+    text-align: center;
+    transform: translateY(-7.5rem);
+
+    img {
+        width: 5%;
+    }
+}

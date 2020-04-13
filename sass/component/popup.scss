@@ -1,0 +1,97 @@
+.popup {
+    height          : 100vh;
+    width           : 100%;
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    background-color: rgba($colour-black, .8);
+    z-index         : 9999;
+    opacity         : 0;
+    visibility      : hidden;
+
+    &:target {
+        opacity   : 1;
+        visibility: visible;
+        transition: all .5s;
+    }
+
+    &_close {
+
+        &:link,
+        &:visited {
+            color          : $colour-grey-dark;
+            position       : absolute;
+            top            : -0.3rem;
+            right          : 1rem;
+            font-size      : 3rem;
+            text-decoration: none;
+            display        : inline-block;
+
+            &:hover {
+                color: $colour-primary;
+            }
+        }
+    }
+
+    &_content {
+        @include absCentre;
+        width           : 70%;
+        background-color: $colour-white;
+        height          : 30rem;
+        transform       : translate(-50%, 20%);
+        box-shadow      : 0 2rem 4rem rgba($colour-black, .2);
+        display         : table;
+
+        &_left,
+        &_middle_left,
+        &_middle_right,
+        &_right {
+            width         : 25%;
+            display       : table-cell;
+            vertical-align: middle;
+            text-align    : center;
+
+            img {
+                width: 50%;
+            }
+        }
+
+        &_left_aboutMe {
+            width         : 40%;
+            display       : table-cell;
+            vertical-align: middle;
+            text-align    : center;
+
+            img {
+                width        : 100%;
+                margin-bottom: -0.4rem;
+                margin-top   : -0.1rem;
+            }
+        }
+
+        &_right_large {
+            width         : 60%;
+            display       : table-cell;
+            vertical-align: middle;
+            text-align    : center;
+            padding       : 3rem;
+            font-size     : $default-font-size;
+
+            
+        } 
+    }
+
+    &_links {
+        &:link,
+        &:visited {
+            color          : $colour-grey-dark;
+            font-size      : $default-font-size;
+            text-decoration: none;
+
+            &:hover {
+                color: $colour-primary;
+            }
+        }
+    }
+
+}

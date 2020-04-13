@@ -1,0 +1,76 @@
+.card {
+    perspective     : 30rem;
+    -moz-perspective: 50rem;
+    position        : relative;
+    height          : 20rem;
+
+    &_side {
+        height             : 20rem;
+        transition         : all .8s ease;
+        position           : absolute;
+        top                : 0;
+        bottom             : 0;
+        width              : 100%;
+        backface-visibility: hidden;
+        border-radius      : 3px;
+        box-shadow         : 0 1.5rem 4rem rgba($colour-black, .15);
+
+        &_front {
+            background-color: $colour-white;
+            background-image: linear-gradient(to bottom, $colour-white, $colour-primary-light)
+        }
+
+        &_back {
+            transform       : rotateY(180deg);
+            background-image: linear-gradient(to top left, $colour-secondary-light, $colour-primary);
+
+            p {
+                font-size: 1.5;
+                color: $colour-white;
+                padding  : 2.5rem;
+            }
+        }
+    }
+
+
+    &:hover &_side_front {
+        transform: rotateY(-180deg)
+    }
+
+    &:hover &_side_back {
+        transform: rotateY(0deg);
+    }
+
+    // Front side styling
+    &_picture {
+        margin    : 20% 5%;
+        height    : 2rem;
+        text-align: center;
+
+        img {
+            max-width    : 50%;
+            border-radius: 2rem;
+        }
+    }
+
+    &_details {
+        margin-top: 2rem;
+
+        ul {
+            list-style: none;
+            width     : 80%;
+
+            li {
+                text-align: center;
+                padding   : 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $colour-grey-light-1;
+                }
+            }
+        }
+    }
+
+
+
+}

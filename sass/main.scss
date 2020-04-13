@@ -1,0 +1,30 @@
+@import "abstract/functions.scss";
+@import "abstract/mixins.scss";
+@import "abstract/variables.scss";
+
+@import "base/base.scss";
+@import "base/animation.scss";
+@import "base/typography.scss";
+@import "base/utilities.scss";
+
+@import "component/button.scss";
+@import "component/card.scss";
+@import "component/award.scss";
+@import "component/interest.scss";
+@import "component/composition.scss";
+@import "component/feature-box.scss";
+@import "component/bg-video.scss";
+@import "component/popup.scss";
+
+@import "layout/header.scss";
+@import "layout/grid.scss";
+
+@import "pages/home.scss";
+
+/*
+  pseudo classes:
+  link   : for boxes that need to be checked, for links that need to be clicked...
+  visited: for links that have been clicked before (For here, we want it to stay the same as when it was unclicked)
+  hover  : for when you hover over an element
+  active : for when you click on an element
+*/

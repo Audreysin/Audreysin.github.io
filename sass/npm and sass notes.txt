@@ -1,0 +1,29 @@
+Node JS:
+Allows developers to write and run JavaScript aspplications in the server. Developers started using node.js to also write tools to help them with local web development.
+
+NPM(node package management):
+Simple command line interface that allows developers to install and manage packages on theut local computers. There are all kinds opensource tools, libraries and frameworks needed for modern  development. Modern web development could simply not exist without a package manager.
+
+Terminal:
+
+to check the version of node.js 
+>> node -v
+to install node-sass
+>> npm install node-sass --save-dev
+
+update the script in the json package file 
+
+To run the script
+>> npm run scriptname
+
+To install an npm package that automatically relads a page on file changes
+>> npm install live-server -g
+-g (intall as a global package)
+--save or --save-dev (for packages local to a specific project)
+
+To call the program
+>> live-server
+-> This should open the webpage in the default browser
+-> You will notice the local host IP address:project
+The project is bow running on an http server not through a file protocole
+

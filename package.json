@@ -1,0 +1,16 @@
+{
+  "name": "narours",
+  "version": "1.0.0",
+  "description": "Landing page of natours",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Audrey Sin Fai Lam",
+  "license": "ISC",
+  "devDependencies": {
+    "node": "^13.6.0",
+    "node-sass": "^4.13.1",
+    "sass": "^1.25.0"
+  }
+}

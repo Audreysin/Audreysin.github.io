@@ -1,0 +1,24 @@
+.award {
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba($colour-black, .1);
+    background-color: $colour-white;
+    border-radius: 3px;
+    padding: 2rem 6rem;
+    font-size: $default-font-size;
+
+    // transform: skewX(-20deg);
+
+    ul {
+        // transform: skewX(12deg);
+        list-style: none;
+
+            li {
+                padding   : .8rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $colour-primary;
+                }
+            }
+    }
+}

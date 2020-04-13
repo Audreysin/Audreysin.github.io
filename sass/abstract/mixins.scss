@@ -1,0 +1,17 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+        
+    }
+    
+}
+
+@mixin absCentre {
+    position: absolute;
+    // top: -80%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    
+}

@@ -1,0 +1,209 @@
+/*
+COLORS:
+
+Light green : #7ed56f
+Medium green: #55c57a
+Dark green  : #28b485
+
+*/
+
+$colour-primary: #55c57a;
+$colour-primary-light: #7ed56f;
+$colour-primary-dark: #28b485;
+
+$colour-grey-dark: #777;
+$colour-white: #fff;
+$colour-black: #000;
+
+// .,
+// .::after,
+// .::before {
+//     margin    : 0;
+//     padding   : 0;
+//     box-sizing: inherit;
+// }
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size  : 16px;
+    line-height: 1.7;
+    color      : $colour-grey-dark;
+    padding    : 30px;
+}
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom,
+            rgba($colour-primary-light, 0.8),
+            rgba($colour-primary-dark, 0.8)),
+        url(../img/hero.jpg);
+    background-size    : cover;
+    background-position: top;
+    position           : relative;
+    clip-path          : polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    -webkit-clip-path  : polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+}
+
+.logo-box {
+    position: absolute;
+    top     : 40px;
+    left    : 40px;
+}
+
+.logo {
+    height: 35px;
+}
+
+.heading-primary {
+    color              : $colour-white;
+    text-transform     : uppercase;
+    backface-visibility: hidden;
+    margin-bottom      : 60px;
+}
+
+.heading-primary-main {
+    display                  : block;
+    font-size                : 50px;
+    font-weight              : 400;
+    letter-spacing           : 33px;
+    animation-name           : moveInLeft;
+    animation-duration       : 1s;
+    animation-timing-function: ease-out;
+}
+
+.heading-primary-sub {
+    display       : block;
+    font-size     : 20px;
+    font-weight   : 700;
+    letter-spacing: 14px;
+    animation     : moveInRight 1s ease-out;
+
+    /* animation-delay       : 3s;
+    animation-iteration-count: 3; */
+}
+
+.text-box {
+    position: absolute;
+    left    : 50%;
+    /* relative to the parent element */
+    top: 40%;
+    /* relative to the parent element */
+    transform: translate(-50%, -50%);
+    /* relative to the element itself */
+    text-align: center;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity  : 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform   : translateX(10px);
+        /* transform: rotate(180deg); */
+    }
+
+    100% {
+        opacity  : 1;
+        transform: translate(0);
+    }
+
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity  : 0;
+        transform: translateX(100px);
+    }
+
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity  : 1;
+        transform: translate(0);
+    }
+}
+
+/*
+  pseudo classes:
+  link   : for boxes that need to be checked, for links that need to be clicked...
+  visited: for links that have been clicked before (For here, we want it to stay the same as when it was unclicked)
+  hover  : for when you hover over an element
+  active : for when you click on an element
+   */
+
+.btn:link,
+.btn:visited {
+    text-transform : uppercase;
+    text-decoration: none;
+    padding        : 15px 40px;
+    display        : inline-block;
+    border-radius  : 100px;
+    transition     : all .2s;
+    /* should be in the original state*/
+    position: relative;
+}
+
+.btn:hover {
+    transform : translateY(-3px);
+    box-shadow: 0 10px 20px rgba($colour-black, .2);
+    /* X Y blurr colour */
+    /* rgba (R B Y opacity) */
+}
+
+.btn:active {
+    transform : translateY(-1px);
+    box-shadow: 0 5px 10px rgba($colour-black, .2);
+}
+
+.btm-white {
+    background-color: $colour-white;
+    color           : $colour-grey-dark;
+}
+
+.btn::after {
+    content      : "";
+    display      : inline-block;
+    height       : 100%;
+    width        : 100%;
+    border-radius: 100px;
+    position     : absolute;
+    top          : 0;
+    left         : 0;
+    z-index      : -1;
+    transition   : all 0.4s;
+}
+
+.btm-white::after {
+    background-color: $colour-white;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity  : 0;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity  : 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity  : 1;
+        transform: translate(0);
+    }
+
+}
+
+.btn-animated {
+    animation: moveInBottom .5s ease-out 0.75s;
+    /* animation name duration function delay */
+    animation-fill-mode: backwards;
+}
