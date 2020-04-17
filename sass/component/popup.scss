@@ -37,7 +37,7 @@
         @include absCentre;
         width           : 70%;
         background-color: $colour-white;
-        height          : 30rem;
+        height          : 35rem;
         transform       : translate(-50%, 20%);
         box-shadow      : 0 2rem 4rem rgba($colour-black, .2);
         display         : table;
@@ -74,14 +74,15 @@
             display       : table-cell;
             vertical-align: middle;
             text-align    : center;
-            padding       : 3rem;
+            padding       : 1rem;
             font-size     : $default-font-size;
 
-            
-        } 
+
+        }
     }
 
     &_links {
+
         &:link,
         &:visited {
             color          : $colour-grey-dark;
@@ -92,6 +93,10 @@
                 color: $colour-primary;
             }
         }
+    }
+
+    &_video {
+        height  : 100%;
     }
 
 }
