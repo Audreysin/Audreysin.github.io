@@ -188,7 +188,7 @@ body {
       .card_side_back p {
         font-size: 1.5;
         color: #fff;
-        padding: 2.5rem; }
+        padding: 1.5rem; }
   .card:hover .card_side_front {
     transform: rotateY(-180deg); }
   .card:hover .card_side_back {
