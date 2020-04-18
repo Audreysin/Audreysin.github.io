@@ -1,29 +1,29 @@
 .feature-box {
     background-color: rgba($colour-white, 0.8);
     font-size: 1.5;
-    padding: 2.5rem;
+    padding: 1.5rem;
     text-align: center;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($colour-black, .15);
     transition: transform .3s;
-    height: 20rem;
+    height: 25rem;
 
-    @include respond(tab-port) {
-        padding: 2rem;
-    }
+    // @include respond(tab-port) {
+    //     padding: 2rem;
+    // }
     
 
     &-icon {
         font-size: 3rem;
-        margin-bottom: .5rem;
+        margin-bottom: 0rem;
         display: inline-block;
         background-image: linear-gradient(to right, $colour-primary, $colour-primary);
         -webkit-background-clip: text;
         color: transparent;
 
-        @include respond(tab-port) {
-            margin-bottom: 0;
-        }
+        // @include respond(tab-port) {
+        //     margin-bottom: 0;
+        // }
     }
 
     &:hover {

@@ -29,8 +29,14 @@
                 font-size: 1.5;
                 color    : $colour-white;
                 padding  : 1.5rem;
+
+                &:link,
+                &:visited {
+                    color: $colour-primary;
+                }
             }
-            
+
+
         }
     }
 

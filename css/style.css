@@ -177,6 +177,7 @@ body {
     bottom: 0;
     width: 100%;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .card_side_front {
@@ -189,6 +190,8 @@ body {
         font-size: 1.5;
         color: #fff;
         padding: 1.5rem; }
+        .card_side_back p:link, .card_side_back p:visited {
+          color: #93d5cb; }
   .card:hover .card_side_front {
     transform: rotateY(-180deg); }
   .card:hover .card_side_back {
@@ -294,15 +297,15 @@ body {
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5;
-  padding: 2.5rem;
+  padding: 1.5rem;
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform .3s;
-  height: 20rem; }
+  height: 25rem; }
   .feature-box-icon {
     font-size: 3rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0rem;
     display: inline-block;
     background-image: linear-gradient(to right, #93d5cb, #93d5cb);
     -webkit-background-clip: text;
@@ -379,7 +382,7 @@ body {
       display: table-cell;
       vertical-align: middle;
       text-align: center;
-      padding: 3rem;
+      padding: 1rem;
       font-size: 1rem; }
   .popup_links:link, .popup_links:visited {
     color: #777;
@@ -387,6 +390,11 @@ body {
     text-decoration: none; }
     .popup_links:link:hover, .popup_links:visited:hover {
       color: #93d5cb; }
+  .popup_video {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center; }
 
 .header {
   height: 95vh;
