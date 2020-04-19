@@ -23,16 +23,23 @@
 
         &_back {
             transform       : rotateY(180deg);
-            background-image: linear-gradient(to top left, $colour-secondary-light, $colour-primary);
+            background-image: linear-gradient(to top left, $colour-tertiary-light, $colour-primary);
 
             p {
                 font-size: 1.5;
                 color    : $colour-white;
                 padding  : 1.5rem;
+            }
 
+            &_link {
                 &:link,
                 &:visited {
-                    color: $colour-primary;
+                    color: $colour-tertiary-dark;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $colour-tertiary;
+                    }
                 }
             }
 

@@ -185,13 +185,16 @@ body {
       background-image: linear-gradient(to bottom, #fff, #bfedee); }
     .card_side_back {
       transform: rotateY(180deg);
-      background-image: linear-gradient(to top left, #42a0f8, #93d5cb); }
+      background-image: linear-gradient(to top left, #8c6ebd, #93d5cb); }
       .card_side_back p {
         font-size: 1.5;
         color: #fff;
         padding: 1.5rem; }
-        .card_side_back p:link, .card_side_back p:visited {
-          color: #93d5cb; }
+      .card_side_back_link:link, .card_side_back_link:visited {
+        color: #510bc2;
+        text-decoration: none; }
+        .card_side_back_link:link:hover, .card_side_back_link:visited:hover {
+          color: #b148be; }
   .card:hover .card_side_front {
     transform: rotateY(-180deg); }
   .card:hover .card_side_back {
@@ -368,12 +371,12 @@ body {
       text-align: center; }
       .popup_content_left img, .popup_content_middle_left img, .popup_content_middle_right img, .popup_content_right img {
         width: 50%; }
-    .popup_content_left_aboutMe {
+    .popup_content_left_large {
       width: 40%;
       display: table-cell;
       vertical-align: middle;
       text-align: center; }
-      .popup_content_left_aboutMe img {
+      .popup_content_left_large img {
         width: 100%;
         margin-bottom: -0.4rem;
         margin-top: -0.1rem; }

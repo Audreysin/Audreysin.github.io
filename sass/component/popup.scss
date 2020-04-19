@@ -56,7 +56,7 @@
             }
         }
 
-        &_left_aboutMe {
+        &_left_large {
             width         : 40%;
             display       : table-cell;
             vertical-align: middle;
@@ -76,8 +76,6 @@
             text-align    : center;
             padding       : 1rem;
             font-size     : $default-font-size;
-
-
         }
     }
 
