@@ -6,12 +6,14 @@
     &:visited {
         // text-transform : uppercase;
         text-decoration   : none;
-        padding           : 15px 40px;
+        padding           : 0.5rem 2rem;
         display           : inline-block;
-        border-radius     : 100px;
+        border-radius     :2rem;
         transition        : all .2s;
         /* should be in the original state*/
         position: relative;
+        font-size: $default-font-size;
+
     }
 
     &:hover {

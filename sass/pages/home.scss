@@ -3,6 +3,10 @@
     padding         : 10rem 3rem;
     margin-top      : -20vh;
     margin-bottom   : -5rem;
+
+    @include respond(tab-port) {
+        padding: 20rem 0;
+    }
 }
 
 .section-features {
@@ -20,12 +24,20 @@
         // > stands for direct child
         transform: skewY(7deg);
     }
+
+    // @include respond(tab-port) {
+    //     padding: 10rem 0;
+    // }
 }
 
 .section-career {
     background-color: $colour-grey-light-1;
     padding         : 10rem 3rem 20rem 3rem;
     margin-top      : -5rem;
+
+    // @include respond(tab-port) {
+    //     padding: 20rem 0 10rem 0;
+    // }
 }
 
 .section-awards {
@@ -49,6 +61,10 @@
     padding         : 10rem 3rem 20rem 3rem;
     margin-top      : -5rem;
     position: relative;
+
+    // @include respond(tab-port) {
+    //     padding: 10rem 0;
+    // }
 }
 
 .footer {
@@ -57,7 +73,15 @@
     text-align: center;
     transform: translateY(-7.5rem);
 
+    @include respond(tab-port) {
+        margin-top: -10rem;
+    }
+
     img {
         width: 5%;
+
+        @include respond(tab-port) {
+            width: 20%;
+        }
     }
 }

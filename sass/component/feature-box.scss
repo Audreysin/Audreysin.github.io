@@ -1,16 +1,20 @@
 .feature-box {
     background-color: rgba($colour-white, 0.8);
-    font-size: 1.5;
+    font-size: .85rem;
     padding: 1.5rem;
     text-align: center;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($colour-black, .15);
     transition: transform .3s;
-    height: 25rem;
+    height: auto;
 
-    // @include respond(tab-port) {
-    //     padding: 2rem;
-    // }
+    @include respond(tab-port) {
+        padding: .5rem;
+    }
+
+    &-text {
+        padding-bottom: 2rem;
+    }
     
 
     &-icon {
@@ -21,9 +25,9 @@
         -webkit-background-clip: text;
         color: transparent;
 
-        // @include respond(tab-port) {
-        //     margin-bottom: 0;
-        // }
+        @include respond(tab-port) {
+            margin-bottom: 0;
+        }
     }
 
     &:hover {

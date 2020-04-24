@@ -4,13 +4,25 @@
     padding              : 2.5rem;
     text-align           : center;
     box-shadow           : 0 1.5rem 4rem rgba($colour-black, .15);
-    height               : 8.5rem;
-    width                : 8.5rem;
+    height               : 12rem;
+    width                : 12rem;
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside        : circle(50% at 50% 50%);
     -webkit-clip-path    : circle(50% at 50% 50%);
     clip-path            : circle(50% at 50% 50%);
     position             : relative;
+
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        border-radius: none;
+    }
+
+    @include respond(phone) {
+        transform: translateX(-3rem) skewX(0);
+    }
 
     &_img {
         position: absolute;

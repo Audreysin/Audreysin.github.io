@@ -1,11 +1,15 @@
 .award {
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
     box-shadow: 0 3rem 6rem rgba($colour-black, .1);
     background-color: $colour-white;
     border-radius: 3px;
-    padding: 2rem 6rem;
+    padding: 2rem 3rem;
     font-size: $default-font-size;
+
+    @include respond(tab-port) {
+        font-size: .85rem;
+    }
 
     // transform: skewX(-20deg);
 
@@ -14,7 +18,7 @@
         list-style: none;
 
             li {
-                padding   : .8rem;
+                padding   : .3rem 0;
 
                 &:not(:last-child) {
                     border-bottom: 1px solid $colour-primary;

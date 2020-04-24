@@ -1,7 +1,13 @@
 .u-centre-text {
-    text-align: center;
+    text-align: center !important;
 }
 
-.u-margin-bottom-big { margin-bottom: 2rem;}
+.u-margin-bottom-big { 
+    margin-bottom: 2rem !important;
 
-.u-margin-bottom-small { margin-bottom: 1.5rem;}
+    @include respond(tab-port) {
+        margin-bottom: 1.5rem !important;
+    }
+}
+
+.u-margin-bottom-small { margin-bottom: 1.5rem !important;}
