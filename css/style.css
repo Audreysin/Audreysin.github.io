@@ -222,24 +222,24 @@ body {
   transform: translateY(0); }
 
 .card {
-  perspective: 30rem;
-  -moz-perspective: 50rem;
-  position: relative;
-  height: 30rem; }
+  perspective: 25rem;
+  -moz-perspective: 25rem;
+  position: center;
+  height: 25rem; }
   .card_side {
     height: auto;
     transition: all .8s ease;
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 100%;
+    width: 70%;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .card_side_front {
-      font-size: 1rem;
+      font-size: 0.8rem;
       text-align: center;
       background-color: #fff;
       background-image: linear-gradient(to bottom, #fff, #bfedee); }
